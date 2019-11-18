@@ -774,7 +774,7 @@ mark {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: transparent;
+    /* background: #fff; */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -789,6 +789,8 @@ mark {
     -webkit-align-items: center;
     align-items: center;
   }
+
+
 
 
 /* media queries */
