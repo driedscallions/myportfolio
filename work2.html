@@ -44,6 +44,8 @@
 
     <!--vendor styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.css"> -->
 
 
     <!--custom styles-->
@@ -157,42 +159,27 @@
        
 
 
-        <!-- Swiper wireframe-->
-        <div class="swiper-container  wow fadeInRight animated">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 18.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 6.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 17.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 16.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 15.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 14.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 13.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 12.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 11.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 10.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 9.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 8.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 7.png" alt="文章圖">
-                </div>
-                <div class="swiper-slide"> <img class="img-responsive" src="./img/iPhone White Copy 19.png" alt="文章圖">
-                </div>
 
-            </div>
+        <!-- owl wireframe-->
+        <div class="owl-carousel wow fadeInRight animated">
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 18.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 6.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 17.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 16.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 15.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 14.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 13.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 12.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 11.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 10.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 9.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 8.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 7.png" alt="文章圖"> </div>
+            <div> <img class="img-responsive" src="./img/iPhone White Copy 19.png" alt="文章圖"> </div>
         
         </div>
-        <!-- end swiper wireframe -->
+
+        <!-- end owl wireframe -->
 
         <!-- end current section -->
 
@@ -424,6 +411,8 @@
 
         <!-- vendor javascript-->
         <script type="text/javascript" src="./node_modules/wow.js/dist/wow.min.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         
 
         <!--custom javascript-->
@@ -433,6 +422,43 @@
         <!--wow-->
         <script>
              new WOW().init();
+        </script>
+
+
+
+        <!-- owl -->
+        <script>
+        
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+
+                nav:false,
+                loop:true,
+                center: true,
+                stagePadding: 90,
+                margin:0,
+                responsive:{
+                    0: {
+                    items:2,
+                    stagePadding: 0,
+                    },
+
+                    1025:{
+                    items:4,
+                    stagePadding: 0,
+                    },
+
+                    2000:{
+                    items:5,
+                    stagePadding: 0,
+                    },
+
+                }
+
+        
+            });
+        });
+
         </script>
 
 
