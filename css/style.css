@@ -284,7 +284,7 @@ p {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
+    
 }
 
 .column {
@@ -330,13 +330,20 @@ p {
 
 
 .cover-wrapper {
+    height: 100vh;
     margin-top: 0% ;
 }
 
 
 .cover-photo {
    
-    margin: 10% 10% 10% 30%;
+    margin: 0% 10% 0% 30%;
+}
+
+
+.navbar {
+    margin: 6% 6% 0% 6%;
+    
 }
 
 
@@ -344,9 +351,6 @@ p {
     width:36px;
     height:36px;
     background-size:contain;
-    position:absolute;
-    left:1%;
-    top:45%;
     background-image:url("../img/fan.png");
     background-repeat: no-repeat;
     animation-name: fan-rotate;
@@ -369,9 +373,12 @@ p {
 
 
 .marquee {
+    position: absolute;
+    left: 12%;
     max-width: 80%;
-    margin: 3% 10% 0% 10%;
     overflow: hidden; 
+    background-color: #fff;
+    /* margin: 0% 2% 2% 2%; */
     
 }
 
@@ -426,11 +433,11 @@ mark {
 
 .fluid {
     width:70%;
-    height:66%;
+    height:55%;
     background-size:contain;
     position:absolute;
     left:12%;
-    top:30%;
+    top:20%;
     background-image:url("../img/ink.png");
     background-repeat: no-repeat;
     animation-name: fluid;
@@ -536,7 +543,7 @@ mark {
     margin-bottom: 80px;
     position: absolute;
     top: -20vh;
-    right:-10%;
+    right:-8%;
     font-size: 10rem;
     text-align: right;
     z-index: -1;
@@ -559,6 +566,14 @@ mark {
 }
 
 
+.fold {
+    position: absolute;
+    bottom: 22%;
+    right: 0%;
+    z-index: -1;
+}
+
+
 .tag {
     background: #fff;
     padding:30px;
@@ -576,6 +591,23 @@ mark {
     background-repeat:no-repeat;
     background-image: url('../img/tube.png');
     z-index: 10;
+}
+
+
+
+.skill-wrapper {
+    margin: 20px 20px 20px -10px;
+}
+
+.skill-wrapper img {
+    width: 60px;
+    height: 60px;
+    filter: grayscale(100%) opacity(40%);
+    
+}
+
+.skill-wrapper :hover {
+    filter: grayscale(0%) opacity(100%);
 }
 
 
@@ -601,6 +633,7 @@ mark {
 
 .caption {
     display: inline-block;
+    color: #686868;
     margin: 20px 4px 10px 0px;
     padding:5px;
     background: rgb(241, 248, 245);
@@ -769,6 +802,12 @@ mark {
 @media screen and (max-width: 1024px) {
 
 
+
+    .navbar {
+        margin: 8% 10% 0% 10%;
+    }
+
+
     .cloud-l {
         width:220px;
         left:54%;
@@ -788,6 +827,9 @@ mark {
 
 @media screen and (max-width: 768px) {
 
+    .cover-photo {
+        margin: 50% 0% 0% 20%;
+    }
 
     .tag {
         padding:20px;
@@ -806,11 +848,15 @@ mark {
         padding: 0px 12px 0px 0px;
     }
 
+    .title-grey {
+    
+        font-size: 5.5rem;
+    }
 
     .caption {
-        font-size: 10px;
+        font-size: 7px;
         margin: 2px;
-        padding:5px;
+        padding:1px;
     }
 
 
@@ -865,33 +911,33 @@ mark {
 
 
     .cover-bg {
-        
         height:24vh;
-       
-        
     }
 
-    .cover-wrapper {
+    /* .cover-wrapper {
         margin-top: 10%;
+    } */
+
+    .topnav {
+        right: -4%;
     }
 
-    
-
-    .title-grey {
-    
-        font-size: 5.5rem;
-    }
 
     .marquee {
-        max-width: 75%;
-        margin: 6% 10% 0% 20%;
-        
-    }s
+        max-width: 72%;
+        left: 16%;
+       
+    }
+ 
+    .cover-photo {
+        margin: 60% 0% 0% 10%;
+    }
+    
 
     .protrait {
         
         right:-30%;
-        top: 60%;
+        top: 20%;
         width:360px;
         margin: 10%;
     }

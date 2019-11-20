@@ -44,6 +44,7 @@
 
     <!--vendor styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
 
 
     <!--custom styles-->
@@ -88,7 +89,7 @@
 <!-- end full-coverphoto  -->
 
 <!-- content -->
-<div class="container wow fadeInUp animated">
+<div class="container wow fadeInUp animated" style="margin-bottom: 8vh;">
     <div class="column">
         <div class="article-title">
 
@@ -97,6 +98,17 @@
                 作為老用戶，基於自己的使用習慣整理出台北等公車APP的精髓所在，並在這些原則下幫它做了介面的REDESIGN。
                 <br><br>
             </p>
+
+            <!-- skill-icons -->
+            <div class="skill-wrapper">
+                <img src="./img/use-tool.png" alt="icon">
+                <img src="./img/soft-sketch.png" title="sketch" alt="icon">
+                <img src="./img/soft-anima.png" title="anima-plugin" alt="icon">
+                <img src="./img/soft-ai.png" title="illustrator" alt="icon">
+                <img src="./img/soft-ps.png" title="photoshop" alt="icon">
+            </div>
+            <!-- end skill-icons -->
+            
 
             <h1>台北等公車的特色與它的競爭者們</h1>
             <p>台北等公車以鮮明色塊作為設計的基調，近似商店的pos機。依靠色彩記憶，減低使用者找尋的負擔，加上明顯的大範圍觸控空間，
@@ -127,6 +139,25 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<!-- owl wireframe-->
+<div class="owl-carousel wow fadeInRight animated">
+    <div> <img class="img-responsive" src="./img/busanimate.gif" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy 2.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy 3.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy 4.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy 5.png" alt="文章圖"> </div>
+    <div> <img class="img-responsive" src="./img/Artboard Copy 6.png" alt="文章圖"> </div>
+
+</div>
+<!-- end owl wireframe -->
+
 
 
 <div class="container wow fadeInUp animated">
@@ -241,6 +272,9 @@
 
 <!-- vendor javascript-->
 <script type="text/javascript" src="./node_modules/wow.js/dist/wow.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        
 
 <!--custom javascript-->
 <script type="text/javascript" src="./js/mdfk.js"></script>
@@ -251,6 +285,42 @@
     new WOW().init();
 </script>
 
+
+
+<!-- owl -->
+<script>
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+
+            nav:false,
+            loop:true,
+            center: true,
+            stagePadding: 90,
+            margin:0,
+            responsive:{
+                0: {
+                items:2,
+                stagePadding: 0,
+                },
+
+                1025:{
+                items:4,
+                stagePadding: 0,
+                },
+
+                2000:{
+                items:5,
+                stagePadding: 0,
+                },
+
+            }
+
+    
+        });
+    });
+
+</script>
 
 </body>
 
