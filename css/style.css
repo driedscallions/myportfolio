@@ -342,14 +342,16 @@ p {
 
 
 .navbar {
-    margin: 6% 6% 0% 6%;
     
+    margin: 2% 0% 0% 0%;
 }
 
 
 .fan {
+    display: inline-block;
     width:36px;
     height:36px;
+    margin: 0px 0px 20px 0px ;
     background-size:contain;
     background-image:url("../img/fan.png");
     background-repeat: no-repeat;
@@ -372,10 +374,24 @@ p {
 }
 
 
-.marquee {
+/* .marquee {
     position: absolute;
     left: 12%;
     max-width: 80%;
+    overflow: hidden; 
+    background-color: #fff;
+    margin: 0% 2% 2% 2%;
+    
+} */
+
+
+.marquee-wrapper {
+    display: inline-block;
+    margin: 0px 0px 0px 40px ;
+}
+
+.marquee {
+    
     overflow: hidden; 
     background-color: #fff;
     /* margin: 0% 2% 2% 2%; */
@@ -383,12 +399,15 @@ p {
 }
 
 .marquee > ul {
+    
     display: flex;
     animation: marquee 15s linear infinite;
     /* list-style-type: none; */
 }
 
 .marquee >ul li {
+    width: 90%;
+    max-width: 900px;
     font-weight: 900;
     font-family: 'Noto Sans TC';
     line-height: 1.4;
@@ -417,11 +436,22 @@ mark {
 }
 
 .hello {
+    display: block;
     position:absolute;
     left:0%;
-    top:30%;
-    writing-mode: vertical-lr;
+    top:26%;
+    
 }
+
+.hello h3, .hello p {
+    writing-mode: vertical-lr;
+} 
+
+
+.hello p  {
+    margin: 100px 0px 0px 0px ;
+} 
+
 
 .cover-title {
     position:absolute;
@@ -432,12 +462,13 @@ mark {
 
 
 .fluid {
-    width:70%;
+    width:90%;
+    max-width: 120px;
     height:55%;
     background-size:contain;
     position:absolute;
-    left:12%;
-    top:20%;
+    left:36%;
+    bottom: 4%;
     background-image:url("../img/ink.png");
     background-repeat: no-repeat;
     animation-name: fluid;
@@ -466,7 +497,7 @@ mark {
 
 .topnav {
     position: absolute;
-    top: 30%;
+    top: 26%;
     right:0%;
     padding:10px;
     text-align: right;
@@ -477,6 +508,11 @@ mark {
 .topnav  h3{
     transform: rotate(-15deg);
     line-height: 2;
+}
+
+.topnav p {
+    writing-mode: vertical-lr;
+    margin: 120px 0px 0px 0px ;
 }
 
 .btn {
@@ -639,6 +675,18 @@ mark {
     background: rgb(241, 248, 245);
 }
 
+.caption-w {
+    display: inline-block;
+    color: #686868;
+    font-size: 8px;
+    line-height: 1;
+    margin: 20px 0px 10px 0px;
+    padding:0px;
+    background: rgb(255, 255, 255);
+}
+
+
+
 /* 
 .overlay-tag-normal {
     position: absolute;
@@ -785,7 +833,7 @@ mark {
 } */
 
 
-.footer-right h2 :hover, .btn :hover{
+.footer-right h2 :hover, .btn :hover ,.topnav h3 :hover {
     color:#fff;
     background-color: #5438dc;
     transition-property: background-color;
@@ -804,9 +852,19 @@ mark {
 
 
     .navbar {
-        margin: 8% 10% 0% 10%;
+        margin: 6% 10% 0% 10%;
     }
 
+    .marquee >ul li {
+        width: 90%;
+        max-width: 600px;
+    }
+
+
+    /* .fluid {
+      
+        bottom: -2%;
+    } */
 
     .cloud-l {
         width:220px;
@@ -817,7 +875,7 @@ mark {
     .drop {
         width:300px;
         height:400px;
-        left:24%;
+        left:30%;
         top:40%;
     }
 
@@ -827,9 +885,22 @@ mark {
 
 @media screen and (max-width: 768px) {
 
-    .cover-photo {
-        margin: 50% 0% 0% 20%;
+
+    .marquee >ul li {
+        width: 90%;
+        max-width: 400px;
     }
+
+    .cover-photo {
+        margin: 30% 0% 0% 20%;
+    }
+
+    .fluid {
+       
+        left:33%;
+        bottom: -10%;
+    }
+
 
     .tag {
         padding:20px;
@@ -871,7 +942,6 @@ mark {
         width:200px;
         right:-10%;
         top:24%;
-        
     }
     
    
@@ -910,6 +980,10 @@ mark {
     }
 
 
+    .navbar {
+        margin: 6% 3% 0% 3%;
+    }
+
     .cover-bg {
         height:24vh;
     }
@@ -922,17 +996,27 @@ mark {
         right: -4%;
     }
 
+    .topnav p {
+        
+        margin: 80px 0px 0px 0px ;
+    }
 
-    .marquee {
-        max-width: 72%;
-        left: 16%;
-       
+
+    .marquee >ul li {
+        width: 90%;
+        max-width: 200px;
     }
  
     .cover-photo {
         margin: 60% 0% 0% 10%;
     }
     
+    /* .fluid {
+        width:26%;
+        height:56%;
+        left:23%;
+        bottom:-13%;
+    } */
 
     .protrait {
         
@@ -979,7 +1063,25 @@ mark {
 
 
 @media screen and (max-width: 400px ) {
+/* 
+    .fluid {
+        width:23%;
+        height:55%;
+        left:23%;
+        bottom:-12%;
+    } */
 
+
+    .marquee-wrapper {
+        margin: 0px 0px 0px 20px ;
+    }
+
+    .drop {
+        width:140px;
+        height:280px;
+        left:25%;
+        top:63%;
+    }
 
 
 }
