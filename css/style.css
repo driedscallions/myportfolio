@@ -336,13 +336,16 @@ p {
 
 
 .cover-photo {
-   
-    margin: 0% 10% 0% 30%;
+    margin: 8% auto 12% auto;
+    
 }
 
+.cover-photo video {
+    margin: 0% 10% 12% 10%;
+    width: 80%;
+}
 
 .navbar {
-    
     margin: 2% 0% 0% 0%;
 }
 
@@ -735,7 +738,6 @@ mark {
 }
 
 
-
 /* skill icons */
 .icon-grey {
     width: 100px;
@@ -793,9 +795,9 @@ mark {
 
 .hole {
     justify-self: center;
-    width:54%;
+    width:36%;
     min-height: 10vh;
-    margin: 10% 10% 8% 30%;
+    margin: 10% auto 8% auto;
     z-index: 10;
 }
 
@@ -860,11 +862,11 @@ mark {
         max-width: 600px;
     }
 
-
-    /* .fluid {
-      
-        bottom: -2%;
-    } */
+    .protrait {
+       
+        right:-1%;
+       
+    }
 
     .cloud-l {
         width:220px;
@@ -872,11 +874,15 @@ mark {
         top:70%;
     }
 
+    .hole {
+        width:40%;
+    }
+
     .drop {
-        width:300px;
-        height:400px;
+        width:280px;
+        height:450px;
         left:30%;
-        top:40%;
+        top:36%;
     }
 
 }
@@ -891,17 +897,7 @@ mark {
         max-width: 400px;
     }
 
-    .cover-photo {
-        margin: 30% 0% 0% 20%;
-    }
-
-    .fluid {
-       
-        left:33%;
-        bottom: -10%;
-    }
-
-
+   
     .tag {
         padding:20px;
         
@@ -943,7 +939,19 @@ mark {
         right:-10%;
         top:24%;
     }
-    
+
+
+    .hole {
+        width:72%;
+        margin: 40% auto 8% auto;
+    }
+
+    .drop {
+        width:240px;
+        height:480px;
+        left:25%;
+        top:67%;
+    }
    
     .footer{
         justify-content: left;
@@ -988,9 +996,7 @@ mark {
         height:24vh;
     }
 
-    /* .cover-wrapper {
-        margin-top: 10%;
-    } */
+   
 
     .topnav {
         right: -4%;
@@ -1007,15 +1013,14 @@ mark {
         max-width: 200px;
     }
  
+
     .cover-photo {
-        margin: 60% 0% 0% 10%;
+        margin: 50% auto 0% auto;
     }
     
-    /* .fluid {
-        width:26%;
-        height:56%;
-        left:23%;
-        bottom:-13%;
+    /* .cover-photo video {
+        margin: 0% 10% 12% 10%;
+        width: 80%;
     } */
 
     .protrait {
@@ -1046,31 +1051,21 @@ mark {
     }
 
 
-    .hole {
-        width:64%;
-        margin: 40% 10% 8% 20%;
-    }
-
-
     .drop {
         width:180px;
         height:360px;
         left:25%;
-        top:60%;
+        top:63%;
     }
 }
 
 
 
 @media screen and (max-width: 400px ) {
-/* 
-    .fluid {
-        width:23%;
-        height:55%;
-        left:23%;
-        bottom:-12%;
-    } */
 
+    .cover-photo {
+        margin: 70% auto 0% auto;
+    }
 
     .marquee-wrapper {
         margin: 0px 0px 0px 20px ;
