@@ -330,23 +330,32 @@ p {
 
 
 .cover-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
     height: 100vh;
-    margin-top: 0% ;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .cover-photo {
+    position: absolute;
+    bottom: 10%;
     margin: 0% auto 0% auto;
-    
+    z-index: -1;
 }
 
 .cover-photo video {
-    margin: 0% 10% 12% 10%;
+    margin: 0% 10% 5% 14%;
     width: 80%;
 }
 
 .navbar {
-    margin: 2% 0% 20% 0%;
+    top: 10%;
 }
 
 
@@ -394,7 +403,6 @@ p {
 }
 
 .marquee {
-    
     overflow: hidden; 
     background-color: #fff;
     /* margin: 0% 2% 2% 2%; */
@@ -464,7 +472,7 @@ mark {
 }
 
 
-.fluid {
+/* .fluid {
     width:90%;
     max-width: 120px;
     height:55%;
@@ -495,7 +503,7 @@ mark {
     100%{
         background-position: -1px -1px;
     }
-}
+} */
 
 
 .topnav {
@@ -555,25 +563,25 @@ mark {
     justify-content: center;
 }
 
-.paint {
+/* .paint {
     position: absolute;
-    /*padding-left: 100px;*/
+    padding-left: 100px;
     right: 5%;
     animation-name: paint;
-    /* animation-delay: 1s; */
+    animation-delay: 1s;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     z-index: -10;
-}
+} */
 
-@keyframes paint {
+/* @keyframes paint {
     from {
         top: 30%;
     }
     to {
         top: 90%;
     }
-}
+} */
 
 
 
@@ -763,9 +771,6 @@ mark {
 
 /*footer*/
 
-
-
-
 .drop {
     width:220px;
     height:360px;
@@ -785,7 +790,6 @@ mark {
     0%{
         background-position: 0px 0px;
     }
-
 
     100%{
         background-position: 0px 600px;
@@ -853,9 +857,9 @@ mark {
 
 
 
-    .navbar {
+    /* .navbar {
         margin: 6% 10% 20% 10%;
-    }
+    } */
 
     .marquee >ul li {
         width: 90%;
@@ -988,9 +992,9 @@ mark {
     }
 
 
-    .navbar {
+    /* .navbar {
         margin: 6% 3% 50% 3%;
-    }
+    } */
 
     .cover-bg {
         height:24vh;
@@ -1014,9 +1018,11 @@ mark {
     }
  
 
-    .cover-photo {
+    /* .cover-photo {
+        position: absolute;
+        bottom: 20%;
         margin: 0% auto 0% auto;
-    }
+    } */
     
     /* .cover-photo video {
         margin: 0% 10% 12% 10%;
@@ -1063,9 +1069,9 @@ mark {
 
 @media screen and (max-width: 400px ) {
 
-    .cover-photo {
+    /* .cover-photo {
         margin: 0% auto 0% auto;
-    }
+    } */
 
     .marquee-wrapper {
         margin: 0px 0px 0px 20px ;
@@ -1077,7 +1083,6 @@ mark {
         left:25%;
         top:63%;
     }
-
 
 }
 
