@@ -769,6 +769,36 @@ mark {
 
 
 
+/* masonry */
+
+
+#root {
+    margin: 0 auto;
+    /* width: 90%;
+    max-width: 1100px; */
+    column-count: 3;
+    column-width: 33.333%;
+    column-gap: 20px;
+}
+
+.item {
+    margin-bottom: 10px;
+    break-inside: avoid;
+    /* background: #fff; */
+    border-radius: 5px;
+}
+
+/* .item:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+} */
+
+.itemImg {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
 /*footer*/
 
 .drop {
@@ -889,7 +919,11 @@ mark {
         top:36%;
     }
 
+
+ 
 }
+
+
 
 
 
@@ -1000,7 +1034,6 @@ mark {
         height:24vh;
     }
 
-   
 
     .topnav {
         right: -4%;
@@ -1063,6 +1096,13 @@ mark {
         left:25%;
         top:63%;
     }
+    
+    #root {
+        column-count: 1;
+        column-width: 90%;
+        column-gap: 8px;
+    }
+
 }
 
 
@@ -1083,6 +1123,8 @@ mark {
         left:25%;
         top:63%;
     }
+
+    
 
 }
 
