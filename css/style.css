@@ -363,7 +363,7 @@ p {
     display: inline-block;
     width:36px;
     height:36px;
-    margin: 0px 0px 20px 0px ;
+    /* margin: 0px 0px 20px 0px ; */
     background-size:contain;
     background-image:url("../img/fan.png");
     background-repeat: no-repeat;
