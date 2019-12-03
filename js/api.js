@@ -13,22 +13,30 @@ request.send();
 
 
   // const weather = document.getElementById('weather');
-  const weatherPlace = document.getElementById('location');
+  
   
 
 request.onload = function () {
 
   var weatherContent = request.response;
+  // const location = request.response;
   // Begin accessing JSON data here
-  console.log(weatherContent)
-
-  
-  var weatherPlace = records.location[0].locationName;
+  // console.log(weatherContent)
   for(i = 0; i < location.length; i++) { // 用迴圈跑各個縣市
+
+    // const place = records.location[i].locationName;
+    // const weatherPlace = document.getElementById('location');
+    // const abc = <Text>{place}</Text>
+    // weatherPlace.appendChild(abc);
+    // document.getElementById("location").appendChild(node);
+
+    var place = document.createElement("li");
+    var weatherPlace = records.location[i].locationName;
+    place.appendChild(weatherPlace);
+    document.getElementById("wlocation").appendChild(place);
 
 
   }
-
 
 }
 
