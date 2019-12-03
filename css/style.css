@@ -360,9 +360,10 @@ p {
 .marquee-wrapper {
     
     width: 75vw;
+    max-width: 1100px;
     margin: 0 auto;
     display: inline-block;
-    margin: 0px 0px 0px 40px ;
+    margin: 0px 0px 0px 0px ;
 }
 
 /* .marquee {
