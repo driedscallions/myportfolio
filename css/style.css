@@ -276,7 +276,8 @@ p {
 
 
 .container-full {
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
@@ -334,6 +335,7 @@ p {
     display: inline-block;
     width:36px;
     height:36px;
+    margin: 0px 30px 0px 0px;
     background-size:contain;
     background-image:url("../img/fan.png");
     background-repeat: no-repeat;
@@ -360,10 +362,9 @@ p {
 .marquee-wrapper {
     
     width: 75vw;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1000px;
     display: inline-block;
-    margin: 0px 0px 0px 0px ;
+    margin: 0 auto;
 }
 
 /* .marquee {
@@ -538,8 +539,8 @@ mark {
 
 
 .card {
-    
     cursor: pointer;
+    margin-top: 40px;
 }
 
 
@@ -840,7 +841,7 @@ mark {
     }
 
     .tag h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0px 0px 10px 0px;
     }
 
@@ -862,11 +863,14 @@ mark {
         padding:1px;
     }
 
+    .btn {
+        font-size: 1.2rem;
+    }
 
     .protrait {
-        right:-10%;
-        top: 8%;
-        width:480px;
+        
+        top: -20%;
+        
     }
 
 
@@ -913,7 +917,7 @@ mark {
 @media screen and (max-width: 600px) {
 
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 
@@ -946,7 +950,7 @@ mark {
         
         right:-30%;
         top: 20%;
-        width:360px;
+        width:480px;
         margin: 10%;
     }
 
@@ -989,6 +993,11 @@ mark {
 
 @media screen and (max-width: 400px ) {
 
+
+    .skill-wrapper img {
+        width: 40px;
+        height: 40px;
+    }
 
     .drop {
         width:140px;
