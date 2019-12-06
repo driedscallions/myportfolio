@@ -1,21 +1,90 @@
-ˇˇˇˇˇˇˇˇˇˇˇˇˇˇ/* http://meyerweb.com/eric/tools/css/reset/
+ˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -25,8 +94,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -34,16 +112,20 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -53,6 +135,7 @@ table {
     border-spacing: 0;
 
 }
+
 /*end reset css*/
 
 
@@ -72,7 +155,7 @@ body {
 }
 
 body {
-    
+
     margin: 0;
     font-family: 'Noto Sans TC';
     color: #686868;
@@ -87,8 +170,7 @@ h1,
 h2,
 h3,
 footer h2 a,
-.btn a
-{
+.btn a {
     font-weight: 900;
     font-family: 'Noto Sans TC';
     line-height: 1.4;
@@ -101,11 +183,9 @@ footer h2 a,
 
 h4,
 h5,
-h6
-  
-{
+h6 {
     font-weight: 300;
-    font-family:  'Noto Sans TC';
+    font-family: 'Noto Sans TC';
     line-height: 1.2;
     color: #000;
     margin-top: 0;
@@ -149,41 +229,49 @@ p {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
+
     50% {
         -webkit-transform: translateY(-4px);
         transform: translateY(-4px);
     }
+
     100% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
 }
+
 @keyframes hvr-bob {
     0% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
+
     50% {
         -webkit-transform: translateY(-4px);
         transform: translateY(-4px);
     }
+
     100% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
 }
+
 @-webkit-keyframes hvr-bob-float {
     100% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
 }
+
 @keyframes hvr-bob-float {
     100% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
     }
 }
+
 .hvr-bob {
     display: inline-block;
     vertical-align: middle;
@@ -191,7 +279,10 @@ p {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
     -webkit-animation-name: hvr-bob-float, hvr-bob;
     animation-name: hvr-bob-float, hvr-bob;
     -webkit-animation-duration: .3s, 1.5s;
@@ -235,16 +326,16 @@ p {
     }
 }
  */
- header {
-    position:fixed;
-    display:flex;
+header {
+    position: fixed;
+    display: flex;
     align-items: center;
     left: 0%;
-    top:0%;
+    top: 0%;
     width: 100%;
-    height:5%;
+    height: 5%;
     padding: 1%;
-    background:#fff;
+    background: #fff;
     z-index: 30;
 }
 
@@ -276,8 +367,7 @@ p {
 
 
 .container-full {
-    display: flex;
-    justify-content: center;
+    display: block;
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
@@ -288,7 +378,7 @@ p {
 }
 
 .column {
-    flex:1;
+    flex: 1;
     margin: 10px 10px 10px 10px;
 }
 
@@ -296,8 +386,8 @@ p {
 .cover-bg {
     position: absolute;
     max-width: 100%;
-    height:50vh;
-    top:0%;
+    height: 50vh;
+    top: 0%;
     z-index: 0;
 }
 
@@ -333,26 +423,26 @@ p {
 
 .fan {
     display: inline-block;
-    width:36px;
-    height:36px;
+    width: 36px;
+    height: 36px;
     margin: 0px 30px 0px 0px;
-    background-size:contain;
-    background-image:url("../img/fan.png");
+    background-size: contain;
+    background-image: url("../img/fan.png");
     background-repeat: no-repeat;
     animation-name: fan-rotate;
-    animation-duration:1s;
-    animation-iteration-count:infinite;
-    animation-timing-function:cubic-bezier(.50 ,.50 , .50 ,.50);
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.50, .50, .50, .50);
     z-index: 10;
 }
 
-@keyframes fan-rotate{
-    0%{
+@keyframes fan-rotate {
+    0% {
         -webkit-transform: rotate(0deg);
     }
 
-    
-    100%{
+
+    100% {
         -webkit-transform: rotate(360deg);
     }
 }
@@ -360,7 +450,7 @@ p {
 
 
 .marquee-wrapper {
-    
+
     width: 75vw;
     max-width: 1000px;
     display: inline-block;
@@ -393,38 +483,38 @@ p {
 
 
 .marquee {
- 
+
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
-   
-  }
-  
-  .marquee span {
+
+}
+
+.marquee span {
     display: inline-block;
     font-weight: 900;
     font-family: 'Noto Sans TC';
     line-height: 1.4;
-    letter-spacing:3px;
+    letter-spacing: 3px;
     color: #000;
     background-color: #fff;
     /* padding-left: 100%; */
     /* show the marquee just outside the paragraph */
     animation: marquee 30s linear infinite;
-  }
-  
+}
+
 
 
 @keyframes marquee {
-	0% {
-		left: 100%;
-		transform: translateX(0%);
-	}
+    0% {
+        left: 100%;
+        transform: translateX(0%);
+    }
 
-	100% {
-		left: 0;
-		transform: translateX(-100%);
-	}
+    100% {
+        left: 0;
+        transform: translateX(-100%);
+    }
 }
 
 
@@ -434,26 +524,27 @@ mark {
 
 .hello {
     display: block;
-    position:absolute;
-    left:0%;
-    top:26%;
-    
+    position: absolute;
+    left: 0%;
+    top: 26%;
+
 }
 
-.hello h3, .hello p {
+.hello h3,
+.hello p {
     writing-mode: vertical-lr;
-} 
+}
 
 
-.hello p  {
-    margin: 100px 0px 0px 0px ;
-} 
+.hello p {
+    margin: 100px 0px 0px 0px;
+}
 
 
 .cover-title {
-    position:absolute;
-    left:5%;
-    top:30%;
+    position: absolute;
+    left: 5%;
+    top: 30%;
     writing-mode: vertical-lr;
 }
 
@@ -461,26 +552,26 @@ mark {
 .topnav {
     position: absolute;
     top: 26%;
-    right:0%;
-    padding:10px;
+    right: 0%;
+    padding: 10px;
     text-align: right;
     z-index: 30;
 }
 
 
-.topnav  h3{
+.topnav h3 {
     transform: rotate(-15deg);
     line-height: 2;
 }
 
 .topnav p {
     writing-mode: vertical-lr;
-    margin: 120px 0px 0px 0px ;
+    margin: 120px 0px 0px 0px;
 }
 
 .btn {
 
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin: 5% 5% 5% 0%;
 }
 
@@ -522,7 +613,7 @@ mark {
     margin-bottom: 80px;
     position: absolute;
     top: -20vh;
-    right:-8%;
+    right: -8%;
     font-size: 10rem;
     text-align: right;
     z-index: -1;
@@ -530,7 +621,7 @@ mark {
 }
 
 .title-grey h2 {
-    color:rgba(187, 187, 187, .2);
+    color: rgba(187, 187, 187, .2);
 }
 
 .card-row {
@@ -554,19 +645,19 @@ mark {
 
 .tag {
     background: #fff;
-    padding:30px;
+    padding: 30px;
     z-index: 10;
 }
 
 
 .tag h1::before {
-    display:inline-block;
+    display: inline-block;
     content: '';
-    width:36px;
-    height:24px;
+    width: 36px;
+    height: 24px;
     padding: 0px 12px 2px 0px;
-    background-size:contain;
-    background-repeat:no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('../img/tube.png');
     z-index: 10;
 }
@@ -574,6 +665,8 @@ mark {
 
 
 .skill-wrapper {
+    display: flex;
+    justify-content: center;
     margin: 20px 20px 20px -10px;
 }
 
@@ -581,7 +674,7 @@ mark {
     width: 60px;
     height: 60px;
     filter: grayscale(100%) opacity(40%);
-    
+
 }
 
 .skill-wrapper :hover {
@@ -589,22 +682,23 @@ mark {
 }
 
 
-.article-title h1{
+.article-title h1 {
     margin: 10% 0% 2% 0%;
 }
 
 
-.article-title h1::before ,.article-title h2::before {
+.article-title h1::before,
+.article-title h2::before {
 
-     display:inline-block;
-     content: '';
-     width:36px;
-     height:24px;
-     padding: 0px 12px 2px 0px;
-     background-size:contain;
-     background-repeat:no-repeat;
-     background-image: url('../img/tube.png');
-     z-index: 10;
+    display: inline-block;
+    content: '';
+    width: 36px;
+    height: 24px;
+    padding: 0px 12px 2px 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/tube.png');
+    z-index: 10;
 
 }
 
@@ -613,7 +707,7 @@ mark {
     display: inline-block;
     color: #686868;
     margin: 20px 4px 10px 0px;
-    padding:5px;
+    padding: 5px;
     background: rgb(241, 248, 245);
 }
 
@@ -623,7 +717,7 @@ mark {
     font-size: 8px;
     line-height: 1;
     margin: 20px 0px 10px 0px;
-    padding:0px;
+    padding: 0px;
     background: rgb(255, 255, 255);
 }
 
@@ -646,30 +740,30 @@ mark {
 
 .about-words {
     padding: 16% 0% 45% 0%;
-    
+
 }
 
 .cloud-r {
     position: absolute;
-    width:420px;
-    right:-14%;
-    top:40%;
-    z-index: 10; 
+    width: 420px;
+    right: -14%;
+    top: 40%;
+    z-index: 10;
 }
 
 
 .cloud-l {
     position: absolute;
-    width:400px;
-    left:10%;
-    top:54%;
-    z-index: 10; 
+    width: 400px;
+    left: 10%;
+    top: 54%;
+    z-index: 10;
 }
 
 
 .protrait {
     position: absolute;
-    right:-10%;
+    right: -10%;
     top: -8%;
     /* width:540px; */
     margin: 10%;
@@ -683,19 +777,19 @@ mark {
     height: auto;
     filter: grayscale(1);
     margin: 16px;
-    
+
 }
 
 .font-icon-grey {
-    font-size:4rem;
+    font-size: 4rem;
     margin: 20px;
     opacity: .3;
 }
 
 
-.icon-grey:hover{
+.icon-grey:hover {
     filter: none;
-   
+
 }
 
 
@@ -712,11 +806,20 @@ mark {
     column-gap: 20px;
 }
 
+#root-wide {
+    margin: 0 auto;
+    /* width: 90%;
+    max-width: 1100px; */
+    column-count: 2;
+    column-width: 50%;
+    column-gap: 20px;
+}
+
 .item {
     margin-bottom: 20px;
     break-inside: avoid;
     /* background: #fff; */
-    
+
 }
 
 
@@ -728,29 +831,30 @@ mark {
 
 
 
+
 /*footer*/
 
 .drop {
-    width:220px;
-    height:360px;
-    position:absolute;
-    left:35%;
-    top:48%;
-    background-image:url("../img/drop.png");
-    background-size:contain;
+    width: 220px;
+    height: 360px;
+    position: absolute;
+    left: 35%;
+    top: 48%;
+    background-image: url("../img/drop.png");
+    background-size: contain;
     animation-name: dropflow;
-    animation-duration:2s;
-    animation-iteration-count:infinite;
-    animation-timing-function:cubic-bezier(.50 ,.50 , .50 ,.50);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.50, .50, .50, .50);
 
 }
 
-@keyframes dropflow{
-    0%{
+@keyframes dropflow {
+    0% {
         background-position: 0px 0px;
     }
 
-    100%{
+    100% {
         background-position: 0px 600px;
     }
 }
@@ -758,13 +862,13 @@ mark {
 
 .hole {
     justify-self: center;
-    width:36%;
+    width: 36%;
     min-height: 10vh;
     margin: 10% auto 8% auto;
     z-index: 10;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -773,7 +877,7 @@ mark {
     height: auto;
     max-width: 1107px;
     margin: 10vh auto 10vh auto;
-    
+
 }
 
 
@@ -787,14 +891,16 @@ mark {
 }
 
 
-.footer-right h2 :hover, .btn :hover ,.topnav h3 :hover {
-    color:#fff;
+.footer-right h2 :hover,
+.btn :hover,
+.topnav h3 :hover {
+    color: #fff;
     background-color: #5438dc;
     transition-property: background-color;
     transition-duration: .3s;
     transition-delay: 0s;
     transition-timing-function: cubic-bezier(0.2, 0.4, 0.7, 0.8);
-    
+
 }
 
 
@@ -809,24 +915,24 @@ mark {
 
 
     .protrait {
-        right:-1%;
+        right: -1%;
     }
 
     .cloud-l {
-        width:220px;
-        left:54%;
-        top:70%;
+        width: 220px;
+        left: 54%;
+        top: 70%;
     }
 
     .hole {
-        width:40%;
+        width: 40%;
     }
 
     .drop {
-        width:280px;
-        height:450px;
-        left:30%;
-        top:36%;
+        width: 280px;
+        height: 450px;
+        left: 30%;
+        top: 36%;
     }
 
 }
@@ -834,10 +940,10 @@ mark {
 
 
 @media screen and (max-width: 768px) {
-   
+
     .tag {
-        padding:20px;
-        
+        padding: 20px;
+
     }
 
     .tag h1 {
@@ -846,21 +952,21 @@ mark {
     }
 
 
-    .tag h1::before {  
-        width:24px;
-        height:18px;
+    .tag h1::before {
+        width: 24px;
+        height: 18px;
         padding: 0px 12px 0px 0px;
     }
 
     .title-grey {
-    
+
         font-size: 5.5rem;
     }
 
     .caption {
         font-size: 7px;
         margin: 2px;
-        padding:1px;
+        padding: 1px;
     }
 
     .btn {
@@ -868,49 +974,46 @@ mark {
     }
 
     .protrait {
-        
+
         top: -20%;
-        
+
     }
 
 
     .cloud-r {
-        width:200px;
-        right:-10%;
-        top:24%;
+        width: 200px;
+        right: -10%;
+        top: 24%;
     }
 
 
     .hole {
-        width:72%;
+        width: 72%;
         margin: 40% auto 8% auto;
     }
 
     .drop {
-        width:240px;
-        height:480px;
-        left:25%;
-        top:67%;
+        width: 240px;
+        height: 480px;
+        left: 25%;
+        top: 67%;
     }
-   
-    .footer{
+
+    .footer {
         justify-content: left;
         width: 90%;
     }
 
     .footer-right {
         text-align: left;
-        
+
     }
-    
-}
-
-
-
-@media screen and (max-width: 767px) {
-    
 
 }
+
+
+
+@media screen and (max-width: 767px) {}
 
 
 
@@ -922,12 +1025,12 @@ mark {
 
 
     .container {
-    
+
         flex-direction: column;
     }
 
     .cover-bg {
-        height:24vh;
+        height: 24vh;
     }
 
 
@@ -936,51 +1039,52 @@ mark {
     }
 
     .topnav p {
-        
-        margin: 80px 0px 0px 0px ;
+
+        margin: 80px 0px 0px 0px;
     }
 
 
     .marquee-wrapper {
         width: 60vw;
     }
- 
+
 
     .protrait {
-        
-        right:-30%;
+
+        right: -30%;
         top: 20%;
-        width:480px;
+        width: 480px;
         margin: 10%;
     }
 
     .cloud-r {
         display: none;
-        
+
     }
-    
+
     .cloud-l {
         display: none;
-       
-    }
-
-    .footer{
-        margin: 10% auto 10% auto; 
 
     }
 
-    .footer-left, .footer-right {
-       font-size: .7rem;
+    .footer {
+        margin: 10% auto 10% auto;
+
+    }
+
+    .footer-left,
+    .footer-right {
+        font-size: .7rem;
     }
 
 
     .drop {
-        width:180px;
-        height:360px;
-        left:25%;
-        top:63%;
+        width: 180px;
+        height: 360px;
+        left: 25%;
+        top: 63%;
     }
-    
+
     #root {
         column-count: 1;
         column-width: 90%;
@@ -991,7 +1095,7 @@ mark {
 
 
 
-@media screen and (max-width: 400px ) {
+@media screen and (max-width: 400px) {
 
 
     .skill-wrapper img {
@@ -1000,12 +1104,10 @@ mark {
     }
 
     .drop {
-        width:140px;
-        height:280px;
-        left:25%;
-        top:63%;
+        width: 140px;
+        height: 280px;
+        left: 25%;
+        top: 63%;
     }
 
 }
-
-
