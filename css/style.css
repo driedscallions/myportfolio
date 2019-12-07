@@ -666,6 +666,7 @@ mark {
 
 .skill-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px 20px 20px -10px;
 }
@@ -1020,7 +1021,7 @@ mark {
 @media screen and (max-width: 600px) {
 
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 
@@ -1085,12 +1086,13 @@ mark {
         top: 63%;
     }
 
-    #root {
+    #root , #root-wide {
         column-count: 1;
         column-width: 90%;
         column-gap: 8px;
     }
 
+  
 }
 
 
